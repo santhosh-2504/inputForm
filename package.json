@@ -1,4 +1,11 @@
 {
+  "name": "deals_frontend",
+  "version": "1.0.0",
+  "description": "Frontend and Backend for Deals App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
@@ -6,3 +13,4 @@
     "mongoose": "^8.8.3"
   }
 }
+
