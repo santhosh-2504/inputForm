@@ -6,7 +6,9 @@ const path = require('path');
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin: 'https://inputform-production.up.railway.app', // Replace with your frontend URL
+}));
 
 // MongoDB connection
 mongoose.connect(process.env.MONGO_URI, { serverSelectionTimeoutMS: 5000 })
