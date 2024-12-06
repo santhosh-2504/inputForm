@@ -147,7 +147,7 @@
             };
 
             try {
-                const response = await fetch('http://localhost:5000/add-data', {
+                const response = await fetch('https://inputform-production.up.railway.app/add-data', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(data),
